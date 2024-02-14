@@ -1,27 +1,36 @@
 # ZukunftstagDemo
+    Dieses Programm ist eine kleine Übung für den Zukunftstag 2024.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+## Vorbereitung
+    Um das Projekt selbst bearbeiten zu können, musst du nichts installieren oder vorbereiten.
+    Wir benutzen die Online-Entwicklungsumgebung Stackblitz.
 
-## Development server
+    1. Öffnet den Link https://stackblitz.com/github/FelixVoessing/Zukunftstag-Demo
+    2. Wartet, bis das Fenster auf der rechten Seite fertig geladen hat.
+    3. Sobald dort der erste Post geladen hat, zieht das Fenster etwas größer.
+    4. So, ihr seid jetzt bereit, mit den Übungen durchzustarten.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Das Programm
+    In diesem Programm könnt ihr kleiner "Posts" erstellen, die dann unter dem Beispielpost angezeigt werden.
+    Klickt dazu unter dem ersten Post auf den "Neuer Post" Knopf.
+    
+    Leider hat das Programm noch ein paar Fehler....
+    Es ist nun eure Aufgabe diese Fehler zu beheben.
 
-## Code scaffolding
+## Übung 1
+    Die Benutzung der Entwicklungsumgebung kennenzulernen ist wichtig. 
+    Programme, die über mehrere Jahre entwickelt werden, bestehen aus sehr vielen verschiedenen Dateien. 
+    In solch riesigen Programmen ist die Suchfunktion sehr wichtig.
+    
+    Hier ist ein gutes Beispiel, warum die Suchfunktion wichtig ist:
+    Ich habe die Übungen 2 und 3 in den Dateien dieses Programms versteckt.
+    
+    Übung 1: Findet Übung 2 und 3.
+    
+    Um die Suchfunktion zu öffnen, drücke folgende Tasten gleichzeitig auf der Tastatur.
+        [Strg] + [Shift] + [F]
+    oder
+        clicke mit der Maus auf die Lupe am linken Bildschirmrand.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    Sobald sich die Suche geöffnet hat, sucht einfach nach dem Stichwort "Aufgabe".
+    Viel Erfolg!

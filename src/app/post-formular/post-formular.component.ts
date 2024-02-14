@@ -18,5 +18,21 @@ export class PostFormularComponent {
   onSubmit(){
     this.formSubmitEmitter.emit(this.formGruppe.value);
   }
+/*
+  Lösungen:
+  Übung 1:
+
+    this.name = this.data.name;
+    this.titel = this.data.titel;
+    this.bildLink = this.data.bildLink;
+    this.beschreibung = this.data.beschreibung;
+  
+  Übung 2:
+    
+    ,{
+      titel: 'Hier steht dein Titel',
+      link: 'Hier steht dein Link'
+    }
+*/
 }
 
