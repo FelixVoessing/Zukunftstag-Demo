@@ -1,0 +1,31 @@
+<form #form class="ui form" [formGroup]="formGruppe" (submit)="onSubmit(); form.reset()">
+    <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Name" [formControl]="formGruppe.controls.name"/>
+    </div>
+
+    <div class="field">
+        <label>Titel</label>
+        <input type="text" placeholder="Titel" [formControl]="formGruppe.controls.titel"/>
+    </div>
+
+    <div class="field">
+        <label>Bild</label>
+        <select #bildAuswahl class="ui selection dropdown" [formControl]="formGruppe.controls.bildLink">
+            <option *ngFor="let bild of bilder" [value]="bild.link">
+                {{bild.titel}}
+            </option>
+        </select>
+    </div>
+
+    <div class="field" *ngIf="formGruppe.controls.bildLink.value">
+        <img style="width: 400px;" [src]="formGruppe.controls.bildLink.value"/>
+    </div>
+
+    <div class="field">
+        <label>Beschreibung</label>
+        <textarea placeholder="Beschreibung" rows="4" [formControl]="formGruppe.controls.beschreibung"></textarea>
+    </div>
+
+    <button class="ui button" type="submit">Abschicken</button>
+</form>

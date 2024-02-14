@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Zukunftstag-Demo';
+  zeigeNeuesPostFormular = true;
+  
+  onFormSubmitted(formularDaten: string){
+    console.log(formularDaten);
+    this.zeigeNeuesPostFormular = false;
+  }
+
 }
