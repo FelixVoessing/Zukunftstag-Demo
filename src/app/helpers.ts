@@ -14,22 +14,44 @@ export interface FormDataValues{
     beschreibung: string
 }
 
+/* 
+Aufgabe 3
+
+Gute Arbeit!
+Die Posts funktionieren jetzt, wie sie sollen!
+
+Erstell doch mal einen Post für dich selbst.
+Klicke auf den "Neuer Post" Knopf, schreib was in die Felder, wähle ein Bild aus und schick es ab.
+
+Ich hoffe dir, gefallen die Bilder.
+Ich hatte mal eine riesige Sammlung von Bildern, in der jeder ein Bild finden konnte, das ihm gefallen hat.
+Leider ist mir die Sammlung verloren gegangen ...
+
+Übung:
+Such dir im Internet ein Bild raus, das dir gefällt und füge es ganz unten in der Bildersammlung hinzu.
+Um ein Bild hinzuzufügen, hast du 2 Möglichkeiten.
+
+1.  Du kannst den Link, des Bildes im Internet kopieren und, diesen Link dann in der Sammlung eintragen.
+    Orientiere dich für diesen Ansatz an dem letzten Bild in der Bildersammlung, "Wald".
+
+2.  Du kannst das Bild herunterladen und unter assets/bilder ablegen. Dies ist etwas schwieriger als 1.
+    Orientiere dich für diesen Ansatz an den anderen Bildern in der Bildersammlung, wie "Eis" oder "Katze".
+
+Viel Erfolg!
+
+Wenn du fertig bist und deine Bilder hinzugefügt hast, erstelle einen Post mit deinem Bild.
+Funktioniert alles so wie du möchtest? Perfekt!
+Nutze jetzt die Suchfunktion der Entwicklungsumgebung um nach "Schlusswort" zu suchen.
+*/
+
 export const bilderSammlung = [
     {
         titel: 'Wähle ein Bild aus',
         link: ''
     },
     {
-        titel: 'Giraffe',
-        link: 'assets/blider/giraffe.jpg'
-    },
-    {
         titel: 'Eis',
         link: 'assets/blider/eis.jpg'
-    },
-    {
-        titel: 'Fußball',
-        link: 'assets/blider/fussball.jpg'
     },
     {
         titel: 'Hund',
@@ -40,24 +62,12 @@ export const bilderSammlung = [
         link: 'assets/blider/katze.jpg'
     },
     {
-        titel: 'Kochen',
-        link: 'assets/blider/kochen.jpg'
-    },
-    {
         titel: 'Konsolen',
         link: 'assets/blider/konsolen.jpg'
     },
     {
         titel: 'Maus',
         link: 'assets/blider/maus.jpg'
-    },
-    {
-        titel: 'Pferd',
-        link: 'assets/blider/pferd.jpg'
-    },
-    {
-        titel: 'Programmieren',
-        link: 'assets/blider/programmieren.jpg'
     },
     {
         titel: 'Wald',
