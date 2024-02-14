@@ -8,25 +8,25 @@ import { FormDataValues } from './helpers';
 })
 export class AppComponent {
   zeigeNeuesPostFormular = false;
-  postsData: FormDataValues[] = [
+  allePosts: FormDataValues[] = [
     {
       name: 'Felix',
-      titel: 'Giraffen sind cool',
-      bildLink: 'assets/blider/giraffe.jpg',
-      beschreibung: 'Heute habe ich, in den Tiefen meiner Bildergalerie, dieses Foto von einer Giraffe gefunden.'
+      titel: 'Viedospielkonsolen',
+      bildLink: 'assets/blider/konsolen.jpg',
+      beschreibung: 'Hallo, ich bin Felix. \nSeit August 2023 bin ich in der Ausbildung zum Fachinformatiker für Anwendungsentwicklung. \nHier lerne ich das Programmieren mit Kotlin und Angular. Kotlin ist eine Sprache in der man Apps für das Handy entwickeln kann und Angular für Webseiten. \nIn meiner Freizeit unternehme ich gerne etwas mit meinen Freunden oder spiele Videospiele.'
     }
   ]
 
   loeschePost(index: number){
-    this.postsData.splice(index, 1);
+    this.allePosts.splice(index, 1);
   }
 
   neuerPost(){
     this.zeigeNeuesPostFormular = true;
   }
   
-  onFormSubmitted(formularDaten: FormDataValues){
-    this.postsData.push(formularDaten);
+  formularAbgeschickt(formularDaten: FormDataValues){
+    this.allePosts.push(formularDaten);
     this.zeigeNeuesPostFormular = false;
   }
 

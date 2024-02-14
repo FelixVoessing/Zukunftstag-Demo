@@ -14,15 +14,13 @@
         <div class="ui two column grid">
             <div class="row" style="height: 80px;">
                 <div class="column">
-                    <select #bildAuswahl class="ui selection dropdown" style="margin-top: 10px;" [formControl]="formGruppe.controls.bildLink">
-                        <option *ngFor="let bild of bilder" [value]="bild.link">
-                            {{bild.titel}}
-                        </option>
+                    <select #bildAuswahl class="ui fluid search dropdown" style="margin-top: 10px;" [formControl]="formGruppe.controls.bildLink">
+                        <option *ngFor="let bild of bilder" [value]="bild.link">{{bild.titel}}</option>
                     </select>
                 </div>
 
                 <div class="column" *ngIf="formGruppe.controls.bildLink.value">
-                    <img class="ui image circular floated right" style="height: 80px;" [src]="formGruppe.controls.bildLink.value"/>
+                    <img class="ui image circular floated right" style="height: 60px;" [src]="formGruppe.controls.bildLink.value"/>
                 </div>
             </div>
         </div>
