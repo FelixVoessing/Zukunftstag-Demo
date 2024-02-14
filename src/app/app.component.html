@@ -1,3 +1,16 @@
-<div style="width: 400px; margin: 10px;">
-    <app-post-formular (formSubmitEmitter)="onFormSubmitted($event)"></app-post-formular>
+<div style="width: 1000px; margin: 10px;">
+    <div class="ui right floated">
+        <app-post-formular *ngIf="zeigeNeuesPostFormular" (formSubmitEmitter)="onFormSubmitted($event)"></app-post-formular>
+    </div>
+    
+    <div *ngFor="let post of postsData; index as i">
+        <div class="ui divider" style="width: 500px;" *ngIf="postsData.length > 1"></div>
+        <app-post [data]="postsData[i]">
+            <i class="trash alternate outline icon right floated circular red inverted" (click)="loeschePost(i)"></i>
+        </app-post>
+    </div>
+
+    <div>
+        <button *ngIf="!zeigeNeuesPostFormular" class="ui left floated button" style="margin-top: 10px;" (click)="neuerPost()">Neuer Post</button>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-<form #form class="ui form" [formGroup]="formGruppe" (submit)="onSubmit(); form.reset()">
+<form #form class="ui form" style="width: 400px;" [formGroup]="formGruppe" (submit)="onSubmit(); form.reset()">
     <div class="field">
         <label>Name</label>
         <input type="text" placeholder="Name" [formControl]="formGruppe.controls.name"/>
@@ -11,15 +11,21 @@
 
     <div class="field">
         <label>Bild</label>
-        <select #bildAuswahl class="ui selection dropdown" [formControl]="formGruppe.controls.bildLink">
-            <option *ngFor="let bild of bilder" [value]="bild.link">
-                {{bild.titel}}
-            </option>
-        </select>
-    </div>
+        <div class="ui two column grid">
+            <div class="row" style="height: 80px;">
+                <div class="column">
+                    <select #bildAuswahl class="ui selection dropdown" style="margin-top: 10px;" [formControl]="formGruppe.controls.bildLink">
+                        <option *ngFor="let bild of bilder" [value]="bild.link">
+                            {{bild.titel}}
+                        </option>
+                    </select>
+                </div>
 
-    <div class="field" *ngIf="formGruppe.controls.bildLink.value">
-        <img style="width: 400px;" [src]="formGruppe.controls.bildLink.value"/>
+                <div class="column" *ngIf="formGruppe.controls.bildLink.value">
+                    <img class="ui image circular floated right" style="height: 80px;" [src]="formGruppe.controls.bildLink.value"/>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="field">
