@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { bilderSammlung, formGrp } from '../helpers';
-import { Output, EventEmitter } from '@angular/core';
+import { Output, EventEmitter,ElementRef, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-post-formular',
@@ -8,15 +8,30 @@ import { Output, EventEmitter } from '@angular/core';
   styleUrl: './post-formular.component.css'
 })
 
-export class PostFormularComponent {
+export class PostFormularComponent implements OnInit, OnDestroy{
   bilder = bilderSammlung;
   formGruppe = formGrp;
   
   @Output()
   formSubmitEmitter = new EventEmitter<any>();
+  @Output()
+  onClose = new EventEmitter();
+
+  constructor(private elementRef: ElementRef){}
+
+  ngOnInit(): void {
+    document.body.appendChild(this.elementRef.nativeElement);
+  }
+  ngOnDestroy(): void {
+  this.elementRef.nativeElement.remove();  
+  }
 
   onSubmit(){
     this.formSubmitEmitter.emit(this.formGruppe.value);
+  }
+
+  closeModal(){
+    this.onClose.emit();
   }
 /*
   Lösungen:

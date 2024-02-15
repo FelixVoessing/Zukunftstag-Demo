@@ -20,10 +20,10 @@ Aufgabe 3
 Gute Arbeit!
 Die Posts funktionieren jetzt, wie sie sollen!
 
-Erstell doch mal einen Post für dich selbst.
+Erstell doch noch mal einen Post für dich selbst.
 Klicke auf den "Neuer Post" Knopf, schreib was in die Felder, wähle ein Bild aus und schick es ab.
 
-Ich hoffe dir, gefallen die Bilder.
+Ich hoffe es sind Bilder dabei, die dir gefallen..
 Ich hatte mal eine riesige Sammlung von Bildern, in der jeder ein Bild finden konnte, das ihm gefallen hat.
 Leider ist mir die Sammlung verloren gegangen ...
 
@@ -37,6 +37,8 @@ Um ein Bild hinzuzufügen, hast du 2 Möglichkeiten.
 2.  Du kannst das Bild herunterladen und unter assets/bilder ablegen. Dies ist etwas schwieriger als 1.
     Orientiere dich für diesen Ansatz an den anderen Bildern in der Bildersammlung, wie "Eis" oder "Katze".
 
+Um ein cooles Bild zu finden empfehle ich: https://unsplash.com/de/s/fotos/programming?license=free.
+
 Viel Erfolg!
 
 Wenn du fertig bist und deine Bilder hinzugefügt hast, erstelle einen Post mit deinem Bild.
@@ -45,10 +47,6 @@ Nutze jetzt die Suchfunktion der Entwicklungsumgebung um nach "Schlusswort" zu s
 */
 
 export const bilderSammlung = [
-    {
-        titel: 'Wähle ein Bild aus',
-        link: ''
-    },
     {
         titel: 'Eis',
         link: 'assets/blider/eis.jpg'
