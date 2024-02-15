@@ -27,6 +27,10 @@ export class AppComponent {
   
   formularAbgeschickt(formularDaten: FormDataValues){
     this.allePosts.push(formularDaten);
+    this.closeForm();
+  }
+
+  closeForm(){
     this.zeigeNeuesPostFormular = false;
   }
 

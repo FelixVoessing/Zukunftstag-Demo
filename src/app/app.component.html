@@ -1,15 +1,16 @@
 <div style="width: 1000px; margin: 10px;">
     <div class="ui right floated">
-        <app-post-formular *ngIf="zeigeNeuesPostFormular" (formSubmitEmitter)="formularAbgeschickt($event)"></app-post-formular>
+        <app-post-formular *ngIf="zeigeNeuesPostFormular" (formSubmitEmitter)="formularAbgeschickt($event)" (onClose)="closeForm()" ></app-post-formular>
     </div>
     
-    <div *ngFor="let post of allePosts; index as i">
-        <div class="ui divider" style="width: 500px;" *ngIf="allePosts.length > 1"></div>
-        <app-post [data]="allePosts[i]">
-            <i class="trash alternate outline icon right floated circular red inverted" (click)="loeschePost(i)"></i>
-        </app-post>
+    <div style="overflow-y: scroll; width: 550px; height: 800px;">
+        <div *ngFor="let post of allePosts; index as i">
+            <div class="ui divider" style="width: 500px;" *ngIf="allePosts.length > 1 && i != 0"></div>
+            <app-post [data]="allePosts[i]">
+                <i class="trash alternate outline icon right floated circular red inverted" (click)="loeschePost(i)"></i>
+            </app-post>
+        </div>
     </div>
-
     <div>
         <button *ngIf="!zeigeNeuesPostFormular" class="ui left floated button" style="margin-top: 10px;" (click)="neuerPost()">Neuer Post</button>
     </div>
