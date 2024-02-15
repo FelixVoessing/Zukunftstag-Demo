@@ -23,6 +23,7 @@ export class PostComponent implements OnInit{
   Glückwunsch, du hast Übung 2 gefunden.
   
   Die Werte scheinen falsch zugeordnet zu sein ...
+
   Anscheinend nimmt der Titel gerade die Daten von dem Bildlink,
   der Bildlink versucht die Beschreibung anzuzeigen und
   die Beschreibung benutzt die Daten, die eigentlich in den Titel gehören.
@@ -30,11 +31,12 @@ export class PostComponent implements OnInit{
   Immerhin wird der Name richtig angezeigt.
   
   Übung: 
-  Versuche, die Daten den richtigen Feldern zuzuordnen!
-  Du kannst dich an der Schreibweise für den Name orientieren.
+  Ordne die Daten den richtigen Feldern zu!
+  Du kannst dich an der Schreibweise für das Name-Feld orientieren.
 
-  Alles, was zum Lösen der Übung bearbeiten musst, befindet sich in dem durch +----+ eingerahmten Bereich.
-  Sobald ihr den Post repariert habt, könnt ihr zu Übung 2 weiter gehen.
+  !! Alles, was zum Lösen der Übung bearbeiten musst, befindet sich in dem durch +----+ eingerahmten Bereich. !!
+
+  Sobald du den Post repariert hast, kannst du zu Übung 3 weiter gehen.
   Viel Erfolg!
   */
   
