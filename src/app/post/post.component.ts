@@ -45,9 +45,9 @@ export class PostComponent implements OnInit{
 
     this.name = this.data.name;
 
-    this.titel = this.data.titel;
-    this.bildLink = this.data.bildLink;
-    this.beschreibung = this.data.beschreibung;
+    this.titel = this.data.bildLink;
+    this.bildLink = this.data.beschreibung;
+    this.beschreibung = this.data.titel;
 
 //+--------------------------------------------+
   }
