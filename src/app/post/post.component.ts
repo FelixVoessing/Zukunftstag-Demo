@@ -15,33 +15,33 @@ export class PostComponent implements OnInit{
   bildLink = '';
   beschreibung = '';
 
-  constructor(){}
-  
-
   /*
   Aufgabe 2
-  Glückwunsch, du hast Übung 2 gefunden.
-  
-  Die Werte scheinen falsch zugeordnet zu sein ...
+    Glückwunsch, du hast Übung 2 gefunden.
+    
+    
+    Die Werte scheinen falsch zugeordnet zu sein ...
 
-  Anscheinend nimmt der Titel gerade die Daten von dem Bildlink,
-  der Bildlink versucht die Beschreibung anzuzeigen und
-  die Beschreibung benutzt die Daten, die eigentlich in den Titel gehören.
+    Anscheinend nimmt der TITEL gerade die Daten von dem BILDLINK,
+    der BILDLINK versucht die BESCHREIBUNG anzuzeigen und
+    die BESCHREIBUNG benutzt die Daten, die eigentlich in den TITEL gehören.
 
-  Immerhin wird der Name richtig angezeigt.
-  
+    -> Immerhin wird der NAME richtig angezeigt. <-
+    
   Übung: 
-  Ordne die Daten den richtigen Feldern zu!
-  Du kannst dich an der Schreibweise für das Name-Feld orientieren.
-
-  !! Alles, was zum Lösen der Übung bearbeiten musst, befindet sich in dem durch +----+ eingerahmten Bereich. !!
+    Ordne die Daten den richtigen Feldern zu!
+    Du kannst dich an der Schreibweise für das Name-Feld orientieren.
+  
+    -> Alles, was bearbeiten musst, befindet sich in dem durch +--------+ eingerahmten Bereich. <-
+    -> Der Code außerhalb des Bereiches funktioniert. <-
+    
 
   Sobald du den Post repariert hast, kannst du zu Übung 3 weiter gehen.
   Viel Erfolg!
   */
   
   ngOnInit(): void {
-//+--------------------------------------------+
+//+-----------Bearbeitungsbereich--------------+
 
     this.name = this.data.name;
 
