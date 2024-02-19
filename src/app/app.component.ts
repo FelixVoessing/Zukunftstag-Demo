@@ -10,7 +10,7 @@ export class AppComponent {
   zeigeNeuesPostFormular = false;
   allePosts: FormDataValues[] = [
     {
-      name: 'Ausildung bei Mettenemeier',
+      name: 'Ausbildung bei Mettenmeier',
       titel: 'Ausbildung zum Anwendungsentwickler',
       bildLink: 'https://app.connectoor.de/Jobdetailsite/loadVacimage?i=535f3cb8b4aee58deab815f4e63f8f93.jpg&v=64cb6290ddb2333b638b4595',
       beschreibung: 'Du beendest demnächst die Schule oder hast festgestellt, \ndass ein Studium doch nichts für dich ist und du lieber aktiv in ein Unternehmen einsteigen willst? \nDann informiere dich gerne über unsere technischen und kaufmännischen Ausbildungsberufe. \nhttps://www.mettenmeier.de/karriere/ausbildung_stellenangebote/'
